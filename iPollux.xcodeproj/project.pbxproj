@@ -24,6 +24,11 @@
 		F9502F1F16F0CA2A00B6AE93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9502EF716F0CA2900B6AE93 /* Foundation.framework */; };
 		F9502F2716F0CA2A00B6AE93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9502F2516F0CA2A00B6AE93 /* InfoPlist.strings */; };
 		F9502F2A16F0CA2A00B6AE93 /* iPolluxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9502F2916F0CA2A00B6AE93 /* iPolluxTests.m */; };
+		F9502F3916F0DC1A00B6AE93 /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = F9502F3316F0DC1A00B6AE93 /* crypt.c */; };
+		F9502F3A16F0DC1A00B6AE93 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = F9502F3416F0DC1A00B6AE93 /* table.c */; };
+		F9502F3B16F0DC1A00B6AE93 /* decrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = F9502F3516F0DC1A00B6AE93 /* decrypt.c */; };
+		F987A8C016F0E61500F0013D /* Pollux.png in Resources */ = {isa = PBXBuildFile; fileRef = F987A8BF16F0E61500F0013D /* Pollux.png */; };
+		F987A8C216F0E67E00F0013D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F987A8C116F0E67E00F0013D /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,14 @@
 		F9502F2616F0CA2A00B6AE93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F9502F2816F0CA2A00B6AE93 /* iPolluxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iPolluxTests.h; sourceTree = "<group>"; };
 		F9502F2916F0CA2A00B6AE93 /* iPolluxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPolluxTests.m; sourceTree = "<group>"; };
+		F9502F3316F0DC1A00B6AE93 /* crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypt.c; sourceTree = "<group>"; };
+		F9502F3416F0DC1A00B6AE93 /* table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = table.c; sourceTree = "<group>"; };
+		F9502F3516F0DC1A00B6AE93 /* decrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decrypt.c; sourceTree = "<group>"; };
+		F9502F3616F0DC1A00B6AE93 /* decrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decrypt.h; sourceTree = "<group>"; };
+		F9502F3716F0DC1A00B6AE93 /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		F9502F3816F0DC1A00B6AE93 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		F987A8BF16F0E61500F0013D /* Pollux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pollux.png; sourceTree = "<group>"; };
+		F987A8C116F0E67E00F0013D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +102,8 @@
 		F9502EE916F0CA2900B6AE93 = {
 			isa = PBXGroup;
 			children = (
+				F987A8C116F0E67E00F0013D /* Default.png */,
+				F987A8BF16F0E61500F0013D /* Pollux.png */,
 				F9502EFB16F0CA2900B6AE93 /* iPollux */,
 				F9502F2216F0CA2A00B6AE93 /* iPolluxTests */,
 				F9502EF416F0CA2900B6AE93 /* Frameworks */,
@@ -119,6 +134,12 @@
 		F9502EFB16F0CA2900B6AE93 /* iPollux */ = {
 			isa = PBXGroup;
 			children = (
+				F9502F3316F0DC1A00B6AE93 /* crypt.c */,
+				F9502F3416F0DC1A00B6AE93 /* table.c */,
+				F9502F3516F0DC1A00B6AE93 /* decrypt.c */,
+				F9502F3616F0DC1A00B6AE93 /* decrypt.h */,
+				F9502F3716F0DC1A00B6AE93 /* table.h */,
+				F9502F3816F0DC1A00B6AE93 /* crypt.h */,
 				F9502F0416F0CA2900B6AE93 /* AppDelegate.h */,
 				F9502F0516F0CA2900B6AE93 /* AppDelegate.m */,
 				F9502F0D16F0CA2900B6AE93 /* MainStoryboard_iPhone.storyboard */,
@@ -240,6 +261,8 @@
 				F9502F0C16F0CA2900B6AE93 /* Default-568h@2x.png in Resources */,
 				F9502F0F16F0CA2900B6AE93 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F9502F1216F0CA2900B6AE93 /* MainStoryboard_iPad.storyboard in Resources */,
+				F987A8C016F0E61500F0013D /* Pollux.png in Resources */,
+				F987A8C216F0E67E00F0013D /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +300,9 @@
 				F9502F0216F0CA2900B6AE93 /* main.m in Sources */,
 				F9502F0616F0CA2900B6AE93 /* AppDelegate.m in Sources */,
 				F9502F1516F0CA2900B6AE93 /* ViewController.m in Sources */,
+				F9502F3916F0DC1A00B6AE93 /* crypt.c in Sources */,
+				F9502F3A16F0DC1A00B6AE93 /* table.c in Sources */,
+				F9502F3B16F0DC1A00B6AE93 /* decrypt.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +372,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = GuillaumeCertificate;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = GuillaumeCertificate;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -361,6 +388,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,7 +407,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = GuillaumeCertificate;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = GuillaumeCertificate;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -386,6 +416,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -467,6 +499,7 @@
 				F9502F2F16F0CA2A00B6AE93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9502F3016F0CA2A00B6AE93 /* Build configuration list for PBXNativeTarget "iPolluxTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +508,7 @@
 				F9502F3216F0CA2A00B6AE93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
